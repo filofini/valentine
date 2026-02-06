@@ -55,6 +55,7 @@
     p {
       font-size: 16px;
       line-height: 1.5;
+      margin-bottom: 20px;
     }
 
     .heart {
@@ -68,6 +69,14 @@
       50% { transform: scale(1.15); }
       100% { transform: scale(1); }
     }
+
+    .photo {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 14px;
+      margin-top: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 
@@ -75,7 +84,7 @@
 
   <div class="container">
 
-    <!-- Loading Screen -->
+    <!-- Loading screen -->
     <div id="loading">
       <h1>Processing request…</h1>
       <p id="status">Checking Valentine availability</p>
@@ -85,16 +94,20 @@
       </div>
     </div>
 
-    <!-- Final Message -->
+    <!-- Final result -->
     <div id="result" class="hidden">
       <div class="heart">❤️</div>
       <h1>Status confirmed</h1>
+
       <p>
         Congratulations.<br><br>
         You are officially Filo's Valentine.<br>
-        Side effects may include<br>
-        smiling at your phone and missing me a lot.
+        Side effects may include smiling at your phone<br>
+        and missing me a lot.
       </p>
+
+      <!-- IMAGE -->
+      <img src="valentine.jpg" alt="Valentine photo" class="photo">
     </div>
 
   </div>
